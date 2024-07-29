@@ -1,0 +1,398 @@
+a {
+    text-decoration: none;
+}
+
+.nav {
+    width: 100%;
+    /* height: 65px; */
+    margin: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav .catTab {
+    padding: 10px 10px !important;
+    border: none;
+    background-color: #029709 !important;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: capitalize !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav .catTab:hover {
+    background-color: rgb(18, 194, 12) !important;
+    color: #000000 !important;
+}
+
+.menuNew {
+    position: absolute;
+    top: 100px;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+}
+
+.menuNew ul {
+    padding: 10px 30px;
+    flex-wrap: wrap;
+    display: flex;
+    width: 800px;
+}
+
+.menuNew ul li {
+    padding: 30px 10px;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #fff;
+    margin: 10px;
+    border-radius: 15px;
+    background: #fffafa;
+    transition: all 1s ease-in-out;
+}
+
+.menuNew ul li:hover {
+    border: 1px solid #585858;
+    
+}
+
+.menuNew ul li a {
+    color: #000000;
+    text-transform: capitalize;
+    transition: all 1s ease-in-out;
+}
+
+.menuNew ul li a:hover {
+    color: #029709 !important;
+}
+
+.listNav1 {
+    display: flex;
+}
+
+.navItems ul li {
+    text-transform: capitalize !important;
+    background-color: #fff !important;
+    color: #029709 !important;
+}
+
+.navItems ul li a {
+    text-decoration: none !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    font-size: 16px !important;
+    padding: 20px 15px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.navItems ul li a:hover {
+    color: #029709 !important;
+    transform: translateY(-3px);
+}
+
+.navItems ul li :active {
+    background-color: #f0f0f0;
+}
+
+.navItems ul li a:active {
+    border-bottom: 1px solid #029709;
+    color: #029709 !important;
+    /* transform: translateY(-3px); */
+}
+
+/*------------------------------- middle nav------------------------------*/
+
+.nav .part3 {
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.nav .part3 .phNo h3 {
+    font-size: 30px !important;
+    line-height: 35px !important;
+}
+
+.nav .part3 .phNo p {
+    font-size: 10px !important;
+    opacity: 0.8;
+    letter-spacing: 3px;
+}
+
+.nav .part3 .headseti {
+    font-size: 60px;
+    padding: 0px 10px;
+}
+
+.navItems ul li button a .fire {
+    font-size: 20px;
+    color: #029709;
+    margin-right: 10px;
+}
+
+.navItems ul li button a .fire:hover {
+    color: #ffffff;
+}
+
+.part1 {
+    width: 25%;
+}
+
+.part2 {
+    width: 45%;
+}
+
+/*----------------------------------- Pages Dropdownpage ----------------------------------*/
+
+.dropdown_menu {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    z-index: 100;
+    color: #000000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.1s ease-in-out;
+    border: 1px solid #ccc;
+    border-radius: 0px 0px 20px 20px;
+    top: 65px;
+}
+
+
+
+.dropdown_menu ul {
+    padding: 20px 10px;
+    margin: 0px;
+}
+
+.listNav1 .listNav .dropdown_menu li {
+    width: 100% !important;
+    margin: 0px !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+    text-transform: capitalize !important;
+    font-size: 15px !important;
+    /* padding: 10px 0px; */
+    transition: all 0.2s ease-in-out;
+}
+
+.listNav1 .listNav .dropdown_menu li a {
+    color: rgba(0, 0, 0, 0.5) !important;
+    padding: 10px 20px;
+    margin: 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown_menu li:hover {
+    color: #029709 !important;
+    transform: translateY(-3px);
+}
+
+.dropdown_menu li a:hover {
+    color: #029709 !important;
+    transform: translateY(-3px);
+}
+
+
+li:hover .dropdown_menu {
+    opacity: 1;
+    visibility: inherit;
+}
+
+.browse:hover .dropdown_menu {
+    opacity: 1;
+    visibility: inherit;
+}
+
+/*----------------------------------- mega menu Dropdownpage ----------------------------------*/
+
+.megamenu {
+    height: auto !important;
+    left: 0.5%;
+    width: 98% !important;
+    margin: auto;
+    right: 0.5%;
+    padding: 25px;
+}
+
+.megaImgOnText {
+    position: relative;
+}
+
+.megaImgText {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 40px;
+    padding: 20px;
+}
+
+.megaImgText p {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.megaImgText h4 {
+    color: #fff;
+}
+
+.megaImgText h5 {
+    color: #7bff00;
+    margin-bottom: 30px;
+}
+
+.imgButt {
+    color: #f8f8f8;
+    border-radius: 30px;
+    background-color: #029709;
+    padding: 10px 20px;
+}
+
+
+.megaImg img {
+    border-radius: 10px;
+    height: 300px;
+}
+
+.navbarLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dropdown_menu .megamenu_drop {
+    padding: 0px;
+}
+
+.listNav1 .listNav .dropdown_menu .megamenu_Part a h4 {
+    font-size: 30px;
+}
+
+.listNav1 .listNav .dropdown_menu .megamenu_Part .megamenu_drop .megaitems {
+    padding: 10px 0px;
+}
+
+.listNav1 .listNav .dropdown_menu .megamenu_Part .megamenu_drop .megaitems a {
+    padding: 0px;
+}
+
+.megamenu_Part {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.megaImg {
+    width: 25%;
+    position: relative;
+}
+
+.megamenu .megaImg .megaImgText .imgButt {
+    justify-content: center;
+}
+
+.megaImg img {
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media(max-width:1760px) {
+    .part2 .navItems {
+        display: block !important;
+        white-space: nowrap !important;
+        overflow-x: scroll !important;
+    }
+
+    .part2 .navItems::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .part2 .navItems .listNav {
+        /* width: 200px !important; */
+        float: none !important;
+        display: inline-block !important;
+    }
+}
+
+@media(max-width:1720px) {
+    .megamenu_Part {
+        width: 20%;
+    }
+
+    .megaImg {
+        width: 40%;
+    }
+}
+
+
+
+@media(max-width:1400px) {
+
+    .megamenu .megaImg .megaImgText .imgButt {
+        padding: 10px 15px;
+    }
+
+    .navItems .listNav1 listNav a {
+        padding: 20px 12px;
+    }
+
+    .megaitems {
+        padding: 0px;
+    }
+
+    .megaitems a {
+        padding: 0px;
+    }
+
+}
+
+@media(max-width:1260px) {
+    .navItems .listNav1 .listNav a {
+        padding: 20px 10px;
+    }
+
+    .megaitems {
+        padding: 0px;
+    }
+
+    .megaitems a {
+        padding: 0px;
+    }
+}
+
+@media(max-width:1120px) {
+
+    .megaitems {
+        padding: 0px;
+    }
+
+    .megaitems a {
+        padding: 0px;
+    }
+
+    .megamenu_Part {
+        width: 20%;
+    }
+
+    .megaImg {
+        width: 40%;
+    }
+
+}

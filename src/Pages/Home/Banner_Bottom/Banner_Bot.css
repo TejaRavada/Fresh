@@ -1,0 +1,211 @@
+.newsLetterSection{
+    width: 100%;
+    height: auto;
+}
+
+.newsLetterSection .box{
+    
+    padding: 100px;
+    background-image: url(../../../assets/images/bannerNewImag.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    /* justify-content: flex-end; */
+}
+
+.newsLetterSection .box .info{
+    padding: 20px 0px;
+}
+
+.newsLetterSection .box .info h2{
+    font-size: 90px;
+    font-weight: 600;
+    color: #e5ff00 !important;
+    text-transform: capitalize;
+    font-size: 60px;
+}
+
+.newsLetterSection .box .info p{
+    font-size: 25px;
+    font-weight: 600;
+    color: #00ffea !important;
+    text-transform: capitalize;
+    padding-bottom: 50px;
+}
+
+.newsLetterBanner {
+    bottom: 0px;
+}
+
+@media (max-width: 800px){
+
+    .newsLetterSection .box {
+        padding: 45px;
+        justify-content: center;
+    }
+
+    .newsLetterSection .box .info h2 {
+        font-size: 50px;
+    }
+
+    .newsLetterSection .box .info p {
+        font-size: 25px;
+        font-weight: 600;
+        color: #00ffea !important;
+        text-transform: capitalize;
+        padding-bottom: 50px;
+    }
+
+    .newsLetterBanner {
+        width: 500px;
+        height: 70px;
+        position: relative;
+    }
+
+    .newsLetterBanner button {
+        height: 70px !important;
+    }
+
+}
+
+@media (max-width: 575px){
+
+    .newsLetterSection .box {
+        padding: 45px;
+        justify-content: center;
+    }
+
+    .newsLetterSection .box .info h2 {
+        font-size: 40px;
+    }
+
+    .newsLetterSection .box .info p {
+        font-size: 20px;
+        font-weight: 600;
+        color: #00ffea !important;
+        text-transform: capitalize;
+        padding-bottom: 50px;
+    }
+
+    .newsLetterBanner {
+        width: 500px;
+        height: 70px;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .newsLetterBanner button {
+        height: 70px !important;
+    }
+
+}
+
+@media (max-width: 475px){
+
+    .newsLetterSection .box {
+        padding: 45px;
+        justify-content: center;
+    }
+
+    .newsLetterSection .box .info h2 {
+        font-size: 30px;
+    }
+
+    .newsLetterSection .box .info p {
+        font-size: 15px;
+        font-weight: 600;
+        color: #00ffea !important;
+        text-transform: capitalize;
+        padding-bottom: 50px;
+    }
+
+    .newsLetterBanner {
+        width: 400px;
+        height: 60px;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .newsLetterBanner button {
+        height: 60px !important;
+        font-size: 18px !important;
+    }
+
+    .newsLetterBanner svg {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        z-index: 10;
+        font-size: 20px !important;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .newsLetterBanner input {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border-radius: 60px;
+        border: 0px;
+        outline: none !important;
+        padding-left: 65px;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 385px){
+
+    .newsLetterSection .box {
+        padding: 45px;
+        justify-content: center;
+    }
+
+    .newsLetterSection .box .info h2 {
+        font-size: 25px;
+    }
+
+    .newsLetterSection .box .info p {
+        font-size: 15px;
+        font-weight: 600;
+        color: #00ffea !important;
+        text-transform: capitalize;
+        padding-bottom: 50px;
+    }
+
+    .newsLetterBanner {
+        width: 300px;
+        height: 50px;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .newsLetterBanner button {
+        height: 50px !important;
+        font-size: 15px !important;
+        width: 120px;
+    }
+
+    .newsLetterBanner svg {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 10;
+        font-size: 20px !important;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .newsLetterBanner input {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border-radius: 60px;
+        border: 0px;
+        outline: none !important;
+        padding-left: 45px;
+        font-size: 15px;
+    }
+
+}

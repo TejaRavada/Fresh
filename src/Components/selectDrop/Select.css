@@ -1,0 +1,69 @@
+.selecrDropWrapper .openSelect{
+    align-items: center;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+    margin-right: 10px;
+    position: relative;
+}
+
+/* .selecrDropWrapper .openSelect .arrow{
+    
+} */
+
+.selecrDrop{
+    width: 300px;
+    height: auto;
+    background: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    z-index: 100;
+    box-shadow: 0 3px 6px rgba(0 0 0 / 20%);
+    padding: 15px;
+}
+
+.searchField input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #029709;
+    outline: none;
+    padding: 0px 15px;
+    font-size: 16px;
+}
+
+.selecrDrop .searchResults{
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 10px 0px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.selecrDrop .searchResults::-webkit-scrollbar{
+    width: 10px !important;
+}
+
+.selecrDrop .searchResults::-webkit-scrollbar-thumb{
+    background: #ccc !important;
+}
+
+.selecrDrop .searchResults li{
+    list-style: none; 
+    font-size: 16px; 
+    width: 100%; 
+    padding: 10px;
+}
+
+.selecrDrop .searchResults li:hover{
+    background: #125f16;
+    color: #ffffff;
+}
+
+.selecrDrop .searchResults li.active{
+    background: #f1f1f1;
+    color: #000 !important;
+}
+
+
