@@ -32,7 +32,7 @@ const SignUp = () => {
         createUserWithEmailAndPassword(auth, formFields.email, formFields.password)
             .then((userCredential) => {
                 // Signed up 
-                const user = userCredential.user;
+                // const user = userCredential.user;
                 setShowLoader(false);
                 setFormFields({
                     email: '',
@@ -47,8 +47,8 @@ const SignUp = () => {
                 console.error("Error signing in with Google:", error);
                 setShowLoader(false);
 
-                const errorCode = error.code;
-                const errorMessage = error.message;
+                // const errorCode = error.code;
+                // const errorMessage = error.message;
                 // ..
             });
     }

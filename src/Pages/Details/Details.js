@@ -119,11 +119,11 @@ const Details = (props) => {
         window.scrollTo(0, 0)
 
         props.data.length !== 0 &&
-            props.data.map((item) => {
+            props.data.forEach((item) => {
                 item.items.length !== 0 &&
-                    item.items.map((item_) => {
+                    item.items.forEach((item_) => {
                         item_.products.length !== 0 &&
-                            item_.products.map((product) => {
+                            item_.products.forEach((product) => {
                                 if (parseInt(product.id) === parseInt(id)) {
                                     setCurrentProduct(product);
                                 }
@@ -136,13 +136,13 @@ const Details = (props) => {
         const related_products = [];
 
         props.data.length !== 0 &&
-            props.data.map((item) => {
+            props.data.forEach((item) => {
                 if (prodCat.parentCat === item.cat_name) {
                     item.items.length !== 0 &&
-                        item.items.map((item_) => {
+                        item.items.forEach((item_) => {
                             if (prodCat.subCatName === item_.cat_name) {
                                 item_.products.length !== 0 &&
-                                    item_.products.map((product, index) => {
+                                    item_.products.forEach((product, index) => {
                                         if (product.id !== parseInt(id)) {
                                             related_products.push(product)
                                         }
@@ -208,7 +208,7 @@ const Details = (props) => {
         try {
             await axios.get("https://freshapi.onrender.com/productReviews").then((response) => {
                 if (response.data.length !== 0) {
-                    response.data.map((item) => {
+                    response.data.forEach((item) => {
                         if (parseInt(item.productId) === parseInt(id)) {
                             reviews_Arr2.push(item)
                         }
@@ -236,7 +236,7 @@ const Details = (props) => {
     const getCartData = async (url) => {
         try {
             await axios.get(url).then((response) => {
-                response.data.length!==0 && response.data.map((item)=>{
+                response.data.length!==0 && response.data.for((item)=>{
                     
                     if(parseInt(item.id)===parseInt(id)){
                         setisAlreadyAddedInCart(true);

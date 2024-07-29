@@ -102,6 +102,10 @@ const Sidebar = (props) => {
         filterByPrice(value[0], value[1]);
     }, [value]);
 
+//     useEffect(() => {
+//     filterByPrice(value[0], value[1]);
+// }, [value, filterByPrice]);
+
     const filterByPrice = (
         (minValue, maxValue) => {
             props.filterByPrice(minValue, maxValue)

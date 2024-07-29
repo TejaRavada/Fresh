@@ -61,28 +61,40 @@ const Header = (props) => {
     ]);
 
     //Location -----------------
-    
+
 
     const [countryList] = useState([]);
 
     useEffect(() => {
+        // const getCountry = async (url) => {
+        //     try {
+        //         await axios.get(url).then((response) => {
+        //             if (response !== null) {
+        //                 // console.log(res.data.data);
+        //                 response.data.data.map((item, index) => {
+        //                     countryList.push(item.country);
+        //                 })
+
+        //                 // console.log(res.data.data.country)
+        //             }
+        //         })
+        //     } catch (error) {
+        //         console.log(error.message);
+        //     }
+        // };
         const getCountry = async (url) => {
             try {
-                await axios.get(url).then((response) => {
-                    if (response !== null) {
-                        // console.log(res.data.data);
-                        response.data.data.map((item, index) => {
-                            countryList.push(item.country);
-                        })
-    
-                        // console.log(res.data.data.country)
-                    }
-                })
+                const response = await axios.get(url);
+                if (response !== null) {
+                    const countries = response.data.data.map((item) => item.country);
+                    countryList.push(...countries);
+                }
             } catch (error) {
                 console.log(error.message);
             }
         };
-    
+
+
         getCountry('https://countriesnow.space/api/v0.1/countries/');
     }, [countryList]);
 
