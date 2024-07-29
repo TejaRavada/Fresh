@@ -33,7 +33,7 @@ const Header = (props) => {
     const [isOpenDropDown, setisOpenDropDown] = useState(false);
     const [isOpenAccDropDown, setIsOpenAccDropDown] = useState(false);
 
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth] = useState(window.innerWidth);
     const [isopenSearch, setOpenSearch] = useState(false);
     const [isOpenNav, setIsOpenNav] = useState(false);
 

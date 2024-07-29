@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
@@ -16,7 +16,7 @@ import { MyContext } from '../../../App';
 
 const HomeSlider = () => {
     const images = [slider1, slider2, slider3, slider4, slider5];
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const context = useContext(MyContext);
 

@@ -21,7 +21,7 @@ const Nav = (props) => {
     const [showDropdown, setShowDropdown] = useState(false);
     const [openDropdownMenuIndex, setopenDropdownMenuIndex] = useState(null);
     const [openMegaMenu, setOpenMegaMenu] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth] = useState(window.innerWidth);
 
     const context = useContext(MyContext);
 

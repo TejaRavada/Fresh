@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useCallback, useContext } from 'react';
+import React, { useEffect, useRef, useState, useContext } from 'react';
 import Slider from 'react-slick';
 import '../../Pages/Details/Details.css';
 import Table from 'react-bootstrap/Table';

@@ -26,7 +26,7 @@ function App() {
   const [productData, setProductData] = useState([]);
   const [cartItems, setCartItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth] = useState(window.innerWidth);
 
   const [isOpenNavigation, setIsOpenNavigation] = useState(false);
 
